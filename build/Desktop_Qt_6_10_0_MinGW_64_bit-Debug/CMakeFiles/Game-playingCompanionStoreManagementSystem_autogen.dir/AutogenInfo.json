@@ -418,6 +418,12 @@
 			null
 		],
 		[
+			"D:/QT item/Game-playingCompanionStoreManagementSystem/RefundManager.h",
+			"MU",
+			"EWIEGA46WW/moc_RefundManager.cpp",
+			null
+		],
+		[
 			"D:/QT item/Game-playingCompanionStoreManagementSystem/RegisterDlg.h",
 			"MU",
 			"EWIEGA46WW/moc_RegisterDlg.cpp",
@@ -545,6 +551,11 @@
 		],
 		[
 			"D:/QT item/Game-playingCompanionStoreManagementSystem/RechargeReviewDlg.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/QT item/Game-playingCompanionStoreManagementSystem/RefundManager.cpp",
 			"MU",
 			null
 		],

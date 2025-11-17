@@ -11,6 +11,7 @@ class ValidatorUtils;
 class SecurityUtils;
 class OrderSettlement;
 class RechargeReviewDlg;
+class RefundManager;
 
 QT_BEGIN_NAMESPACE
 namespace Ui {

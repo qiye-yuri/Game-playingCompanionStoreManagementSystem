@@ -6,6 +6,7 @@
 #include "SecurityUtils.h"
 #include "OrderSettlement.h"
 #include "RechargeReviewDlg.h"
+#include "RefundManager.h"
 
 #include <QtSql/QSqlDatabase>
 #include <QMessageBox>
@@ -457,19 +458,33 @@ void MainWindow::createOrderManagePage() {
                     if (OrderSettlement::settleOrder(orderId.toInt(), errorMsg)) {
                         QMessageBox::information(this, "订单管理", "订单完成结算成功!");
                         m_order_model->item(index.row(), 4)->setText(newStatus);
-
-                        // 记录日志
                         Logger::log(Logger::Info,
                                     QString("订单完成结算 - 订单ID: %1").arg(orderId),
                                     m_userId);
-
                         dialog.close();
-                        refreshBalance(); // 刷新余额显示
+                        refreshBalance();
                     } else {
                         QMessageBox::warning(this, "订单结算失败", errorMsg);
                         return;
                     }
-                } else {
+                }
+                // 如果是取消订单，处理退款
+                else if (newStatus == "cancelled" && currentStatus != "cancelled") {
+                    QString errorMsg;
+                    if (RefundManager::processRefund(orderId.toInt(), m_userRole, errorMsg)) {
+                        QMessageBox::information(this, "订单取消", "订单取消成功并已处理退款!");
+                        m_order_model->item(index.row(), 4)->setText(newStatus);
+                        Logger::log(Logger::Info,
+                                    QString("订单取消 - 订单ID: %1").arg(orderId),
+                                    m_userId);
+                        dialog.close();
+                        refreshBalance();
+                    } else {
+                        QMessageBox::warning(this, "订单取消失败", errorMsg);
+                        return;
+                    }
+                }
+                else {
                     // 其他状态更新
                     QSqlQuery query;
                     query.prepare("UPDATE orders SET order_status = ? WHERE order_id = ?");
