@@ -1,0 +1,9 @@
+D:/QT item/Game-playingCompanionStoreManagementSystem/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/CMakeFiles/Game-playingCompanionStoreManagementSystem.dir
+D:/QT item/Game-playingCompanionStoreManagementSystem/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+D:/QT item/Game-playingCompanionStoreManagementSystem/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+D:/QT item/Game-playingCompanionStoreManagementSystem/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+D:/QT item/Game-playingCompanionStoreManagementSystem/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/CMakeFiles/install.dir
+D:/QT item/Game-playingCompanionStoreManagementSystem/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+D:/QT item/Game-playingCompanionStoreManagementSystem/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+D:/QT item/Game-playingCompanionStoreManagementSystem/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/CMakeFiles/Game-playingCompanionStoreManagementSystem_autogen_timestamp_deps.dir
+D:/QT item/Game-playingCompanionStoreManagementSystem/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/CMakeFiles/Game-playingCompanionStoreManagementSystem_autogen.dir
