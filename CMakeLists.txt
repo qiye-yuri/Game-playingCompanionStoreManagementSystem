@@ -34,6 +34,8 @@ qt_add_executable(Game-playingCompanionStoreManagementSystem
     RechargeReviewDlg.h
     RechargeReviewDlg.cpp
     RechargeReviewDlg.ui
+    RefundManager.h
+    RefundManager.cpp
 )
 
 target_link_libraries(Game-playingCompanionStoreManagementSystem
